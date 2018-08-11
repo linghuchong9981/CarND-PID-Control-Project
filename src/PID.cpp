@@ -1,5 +1,6 @@
 #include "PID.h"
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -127,6 +128,6 @@ void PID::AddParam(int index, double addition) {
 }
 
 double PID::TotalError() {
-    return total_error;
+    return  -Kp * p_error - Ki * i_error - Kd * d_error;
 }
 

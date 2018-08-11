@@ -23,7 +23,7 @@ public:
 
     static const bool USE_TWIDDLE = false;
     //about one circle
-    static const int STEPS_FOR_TWIDDLE = 1700;
+    static const int STEPS_FOR_TWIDDLE = 1800;
 
     /*
     * Coefficients
