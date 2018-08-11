@@ -10,16 +10,16 @@ Self-Driving Car Engineer Nanodegree Program
 
 - P stands of proportional,means that the car will steer in proportion to the cross-track error, or CTE. It takes into account only the present value of CTE. As shown in the video below,the car may overshooting.
 
+[P controller video](./P_controller.mov)
+
 - I stands of integral,means that the car will conside the total CTE past time, which is used to reduce systematic bias.
 
 - D for derivative is the change in CTE from one value to the next. With derivative (D) part, the controller output is proportional to the rate of change of cte (its derivative),which is used to reduce overshooting.After tuned all PID parameters,the car behaves as expected. It steers smoothly along the central line.
 
+[PID controller video](./PID_controller.mov)
 
 
 
-<video src="P_controller" width="320" height="240" controls="controls">
-Your browser does not support the video tag.
-</video>
 
 ## Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through manual tuning, twiddle, SGD, or something else, or a combination!
 
